@@ -3,13 +3,13 @@
 Shows this computer's name, IP addresses and system info on the desktop, drawn onto the wallpaper you already have. Handy for spotting which machine is which in a rack or at FOH, and reading off an IP without opening anything.
 
 ## Install
-- **Mac**: `dist/BEAMid-1.0.0-mac-arm64.dmg` (Apple Silicon). The app isn't signed, so the first time: right-click BEAMid → **Open** → **Open**.
-- **Windows**: `dist/BEAMid-Setup-1.0.0.exe` installs it; `dist/BEAMid-Portable-1.0.0.exe` runs without installing. SmartScreen will warn on first launch: **More info → Run anyway**.
+- **Mac**: `dist/BEAMid-1.0.1-mac-arm64.dmg` (Apple Silicon). The app isn't signed, so the first time: right-click BEAMid → **Open** → **Open**.
+- **Windows**: `dist/BEAMid-Setup-1.0.1.exe` installs it; `dist/BEAMid-Portable-1.0.1.exe` runs without installing. SmartScreen will warn on first launch: **More info → Run anyway**.
 
 The installed version starts with the computer (untick **Start BEAMid when this computer starts** to stop that).
 
 ## How it works
-- BEAMid reads your current wallpaper, draws the info card on top, and sets the result as the wallpaper. On Mac every screen gets its own picture; on Windows one picture is used for all screens, sized for the main one.
+- BEAMid reads your current wallpaper, draws the info card on top, and sets the result as the wallpaper. Every screen gets its own picture. Untick a screen under **Screens** to keep the card off it (for example a projector or show output); it keeps your normal wallpaper.
 - It checks for a new IP address every 5 seconds and everything else every minute. Disk space and uptime only redraw the wallpaper every 30 minutes.
 - Change your wallpaper as usual while BEAMid runs: it notices within a minute and draws on the new one.
 - **Hide from desktop** (window or tray menu) and **Quit** put your original wallpaper back.
